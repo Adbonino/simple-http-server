@@ -1,4 +1,5 @@
-FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
+#FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
+FROM docker.io/centos/httpd-24-centos7
 
 RUN microdnf install --nodocs -y socat iproute
 
